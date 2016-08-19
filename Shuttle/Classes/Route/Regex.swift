@@ -36,7 +36,7 @@ class Regex: NSRegularExpression {
     }
 
     func isMatch(string: String) -> Bool {
-        if let textResult = self.firstMatchInString(string, options: [], range: NSRange(location: 0, length: string.characters.count)) {
+        if let _ = self.firstMatchInString(string, options: [], range: NSRange(location: 0, length: string.characters.count)) {
             return true
         }
         return false
