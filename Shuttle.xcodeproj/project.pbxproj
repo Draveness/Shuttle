@@ -27,6 +27,7 @@
 		725E62371D66B6E500C66CDF /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E62361D66B6E500C66CDF /* Webservice.swift */; };
 		725E62391D66B83100C66CDF /* TransferController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E62381D66B83100C66CDF /* TransferController.swift */; };
 		725E623C1D66D6D000C66CDF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E623B1D66D6D000C66CDF /* Person.swift */; };
+		725E623E1D66DB7E00C66CDF /* MainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E623D1D66DB7E00C66CDF /* MainQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		725E62361D66B6E500C66CDF /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		725E62381D66B83100C66CDF /* TransferController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferController.swift; sourceTree = "<group>"; };
 		725E623B1D66D6D000C66CDF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		725E623D1D66DB7E00C66CDF /* MainQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				722A35FE1D66B25A00D7F28C /* Guidelines.swift */,
 				725E62381D66B83100C66CDF /* TransferController.swift */,
+				725E623D1D66DB7E00C66CDF /* MainQueue.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				722A36091D66B25A00D7F28C /* Payload.swift in Sources */,
+				725E623E1D66DB7E00C66CDF /* MainQueue.swift in Sources */,
 				725E62351D66B6CE00C66CDF /* Resource.swift in Sources */,
 				722A360E1D66B25A00D7F28C /* Shuttle.swift in Sources */,
 				722A36081D66B25A00D7F28C /* Guidelines.swift in Sources */,
