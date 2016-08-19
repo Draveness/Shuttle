@@ -36,6 +36,7 @@ class Regex: NSRegularExpression {
     }
 
     func isMatch(string: String) -> Bool {
+        if self.originalPattern.componentsSeparatedByString("/").count != string.componentsSeparatedByString("/").count { return false }
         if let _ = self.firstMatchInString(string, options: [], range: NSRange(location: 0, length: string.characters.count)) {
             return true
         }

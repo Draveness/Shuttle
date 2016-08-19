@@ -16,5 +16,10 @@ final class Route {
                 Webservice.load(Person.retrieve(payload.id), completion: callback)
             }, build: SuccViewController.init)
         }
+        Shuttle.route("http://localhost:3000/people") { payload in
+            return TransferController(load: { callback in
+                Webservice.load(Person.retrieveAll(), completion: callback)
+            }, build: ViewController.init)
+        }
     }
 }

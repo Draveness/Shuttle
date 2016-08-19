@@ -29,7 +29,7 @@ extension Person {
         })
     }
     
-    static func reteieveAll() -> Resource<[Person]> {
+    static func retrieveAll() -> Resource<[Person]> {
         return Resource<[Person]>(url: NSURL(string: "http://localhost:3000/people")!, parseJSON: { json in
             guard let dictionaries = json as? [JSONDictionary] else { return nil }
             return dictionaries.flatMap(Person.init)
