@@ -18,7 +18,6 @@
 		722A360C1D66B25A00D7F28C /* String+GroupName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A36041D66B25A00D7F28C /* String+GroupName.swift */; };
 		722A360D1D66B25A00D7F28C /* UIViewController+NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A36051D66B25A00D7F28C /* UIViewController+NavigationController.swift */; };
 		722A360E1D66B25A00D7F28C /* Shuttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A36061D66B25A00D7F28C /* Shuttle.swift */; };
-		722A36801D66B35000D7F28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722A367E1D66B35000D7F28C /* Main.storyboard */; };
 		722A36821D66B35000D7F28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722A36811D66B35000D7F28C /* Assets.xcassets */; };
 		722A36851D66B35000D7F28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722A36831D66B35000D7F28C /* LaunchScreen.storyboard */; };
 		722A368D1D66B36000D7F28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A368A1D66B36000D7F28C /* AppDelegate.swift */; };
@@ -38,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721E4A691D66B5B400508614 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		721E4A6A1D66B5B400508614 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		721E4A6B1D66B5B400508614 /* Shuttle.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shuttle.podspec; sourceTree = SOURCE_ROOT; };
 		722A35E11D66B23100D7F28C /* Shuttle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shuttle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		722A35E41D66B23100D7F28C /* Shuttle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shuttle.h; sourceTree = "<group>"; };
 		722A35E61D66B23100D7F28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,11 +54,7 @@
 		722A36041D66B25A00D7F28C /* String+GroupName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GroupName.swift"; sourceTree = "<group>"; };
 		722A36051D66B25A00D7F28C /* UIViewController+NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationController.swift"; sourceTree = "<group>"; };
 		722A36061D66B25A00D7F28C /* Shuttle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuttle.swift; sourceTree = "<group>"; };
-		722A360F1D66B27300D7F28C /* Shuttle.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Shuttle.podspec; path = ../Shuttle.podspec; sourceTree = "<group>"; };
-		722A36101D66B27300D7F28C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		722A36111D66B27300D7F28C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		722A36781D66B35000D7F28C /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		722A367F1D66B35000D7F28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		722A36811D66B35000D7F28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		722A36841D66B35000D7F28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		722A36861D66B35000D7F28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,9 +172,9 @@
 		722A36121D66B27300D7F28C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				722A360F1D66B27300D7F28C /* Shuttle.podspec */,
-				722A36101D66B27300D7F28C /* README.md */,
-				722A36111D66B27300D7F28C /* LICENSE */,
+				721E4A691D66B5B400508614 /* LICENSE */,
+				721E4A6A1D66B5B400508614 /* README.md */,
+				721E4A6B1D66B5B400508614 /* Shuttle.podspec */,
 			);
 			name = "Podspec Metadata";
 			path = ../../Shuttle/Example;
@@ -188,7 +186,6 @@
 				722A368A1D66B36000D7F28C /* AppDelegate.swift */,
 				722A368B1D66B36000D7F28C /* ViewController.swift */,
 				722A368C1D66B36000D7F28C /* SuccViewController.swift */,
-				722A367E1D66B35000D7F28C /* Main.storyboard */,
 				722A36811D66B35000D7F28C /* Assets.xcassets */,
 				722A36831D66B35000D7F28C /* LaunchScreen.storyboard */,
 				722A36861D66B35000D7F28C /* Info.plist */,
@@ -326,7 +323,6 @@
 			files = (
 				722A36851D66B35000D7F28C /* LaunchScreen.storyboard in Resources */,
 				722A36821D66B35000D7F28C /* Assets.xcassets in Resources */,
-				722A36801D66B35000D7F28C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,14 +372,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		722A367E1D66B35000D7F28C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				722A367F1D66B35000D7F28C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		722A36831D66B35000D7F28C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -597,6 +585,7 @@
 				722A36891D66B35000D7F28C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
