@@ -10,7 +10,6 @@
 		722A35E51D66B23100D7F28C /* Shuttle.h in Headers */ = {isa = PBXBuildFile; fileRef = 722A35E41D66B23100D7F28C /* Shuttle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		722A35EC1D66B23100D7F28C /* Shuttle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722A35E11D66B23100D7F28C /* Shuttle.framework */; };
 		722A35F11D66B23100D7F28C /* ShuttleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A35F01D66B23100D7F28C /* ShuttleTests.swift */; };
-		722A36081D66B25A00D7F28C /* Guidelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A35FE1D66B25A00D7F28C /* Guidelines.swift */; };
 		722A36091D66B25A00D7F28C /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A36011D66B25A00D7F28C /* Payload.swift */; };
 		722A360A1D66B25A00D7F28C /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A36021D66B25A00D7F28C /* Regex.swift */; };
 		722A360B1D66B25A00D7F28C /* RouteMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722A36031D66B25A00D7F28C /* RouteMap.swift */; };
@@ -50,7 +49,6 @@
 		722A35EB1D66B23100D7F28C /* ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuttleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		722A35F01D66B23100D7F28C /* ShuttleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTests.swift; sourceTree = "<group>"; };
 		722A35F21D66B23100D7F28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		722A35FE1D66B25A00D7F28C /* Guidelines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guidelines.swift; sourceTree = "<group>"; };
 		722A36011D66B25A00D7F28C /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		722A36021D66B25A00D7F28C /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		722A36031D66B25A00D7F28C /* RouteMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMap.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 		722A35FD1D66B25A00D7F28C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				722A35FE1D66B25A00D7F28C /* Guidelines.swift */,
 				725E62381D66B83100C66CDF /* TransferController.swift */,
 				725E623D1D66DB7E00C66CDF /* MainQueue.swift */,
 			);
@@ -356,7 +353,6 @@
 				725E623E1D66DB7E00C66CDF /* MainQueue.swift in Sources */,
 				725E62351D66B6CE00C66CDF /* Resource.swift in Sources */,
 				722A360E1D66B25A00D7F28C /* Shuttle.swift in Sources */,
-				722A36081D66B25A00D7F28C /* Guidelines.swift in Sources */,
 				722A360D1D66B25A00D7F28C /* UIViewController+NavigationController.swift in Sources */,
 				722A360B1D66B25A00D7F28C /* RouteMap.swift in Sources */,
 				722A360A1D66B25A00D7F28C /* Regex.swift in Sources */,
