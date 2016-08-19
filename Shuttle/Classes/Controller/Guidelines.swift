@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol Guidelines {
-    init(payload: Payload)
-}
-
-extension Guidelines where Self: UIViewController {
-    
+public protocol Guidelines {
+    init<A>(resource: A)
 }

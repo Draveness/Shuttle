@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Shuttle.route("shuttle://succ/:id") { payload, navigation in
             let vc = SuccViewController()
-            vc.succId = payload["id"]?.integerValue
             navigation?.pushViewController(vc, animated: true)
         }
 
