@@ -11,7 +11,7 @@ import Foundation
 final public class TransferController: UIViewController {
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
     
-    public init<A>(load: ((A?) -> ()) -> (), build: (A) -> UIViewController) {
+    public init<A>(load: ((A?) -> ()) -> (), build: A -> UIViewController) {
         super.init(nibName: nil, bundle: nil)
         spinner.startAnimating()
         load() { [weak self] result in

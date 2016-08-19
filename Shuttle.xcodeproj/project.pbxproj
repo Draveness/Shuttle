@@ -29,6 +29,8 @@
 		725E623E1D66DB7E00C66CDF /* MainQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E623D1D66DB7E00C66CDF /* MainQueue.swift */; };
 		725E62411D66E80B00C66CDF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E62401D66E80B00C66CDF /* Route.swift */; };
 		72FC2C2A1D66FDE100DEB0E0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC2C291D66FDE100DEB0E0 /* RootViewController.swift */; };
+		72FC2C2C1D6701E300DEB0E0 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC2C2B1D6701E300DEB0E0 /* Builder.swift */; };
+		72FC2C2E1D6702A700DEB0E0 /* Guidelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC2C2D1D6702A700DEB0E0 /* Guidelines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		725E623D1D66DB7E00C66CDF /* MainQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQueue.swift; sourceTree = "<group>"; };
 		725E62401D66E80B00C66CDF /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		72FC2C291D66FDE100DEB0E0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		72FC2C2B1D6701E300DEB0E0 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		72FC2C2D1D6702A700DEB0E0 /* Guidelines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guidelines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 			children = (
 				725E62381D66B83100C66CDF /* TransferController.swift */,
 				725E623D1D66DB7E00C66CDF /* MainQueue.swift */,
+				72FC2C2B1D6701E300DEB0E0 /* Builder.swift */,
+				72FC2C2D1D6702A700DEB0E0 /* Guidelines.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,9 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FC2C2E1D6702A700DEB0E0 /* Guidelines.swift in Sources */,
 				722A36091D66B25A00D7F28C /* Payload.swift in Sources */,
 				725E623E1D66DB7E00C66CDF /* MainQueue.swift in Sources */,
 				725E62351D66B6CE00C66CDF /* Resource.swift in Sources */,
+				72FC2C2C1D6701E300DEB0E0 /* Builder.swift in Sources */,
 				722A360E1D66B25A00D7F28C /* Shuttle.swift in Sources */,
 				722A360D1D66B25A00D7F28C /* UIViewController+NavigationController.swift in Sources */,
 				722A360B1D66B25A00D7F28C /* RouteMap.swift in Sources */,
