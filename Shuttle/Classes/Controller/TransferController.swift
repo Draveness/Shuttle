@@ -37,9 +37,9 @@ final public class TransferController: UIViewController {
     }
     
     func add(content content: UIViewController) {
-            self.addChildViewController(content)
-            self.view.addSubview(content.view)
-            content.view.frame = self.view.frame
-            content.didMoveToParentViewController(self)
+        self.addChildViewController(content)
+        self.view.addSubview(content.view)
+        content.view.frame = self.view.frame
+        content.didMoveToParentViewController(self)
     }
 }

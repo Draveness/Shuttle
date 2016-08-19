@@ -44,8 +44,8 @@
 		721E4A6A1D66B5B400508614 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		721E4A6B1D66B5B400508614 /* Shuttle.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shuttle.podspec; sourceTree = SOURCE_ROOT; };
 		722A35E11D66B23100D7F28C /* Shuttle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shuttle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		722A35E41D66B23100D7F28C /* Shuttle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shuttle.h; sourceTree = "<group>"; };
-		722A35E61D66B23100D7F28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722A35E41D66B23100D7F28C /* Shuttle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Shuttle.h; path = ../Shuttle.h; sourceTree = "<group>"; };
+		722A35E61D66B23100D7F28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		722A35EB1D66B23100D7F28C /* ShuttleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuttleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		722A35F01D66B23100D7F28C /* ShuttleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTests.swift; sourceTree = "<group>"; };
 		722A35F21D66B23100D7F28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,8 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				722A35FB1D66B25A00D7F28C /* Classes */,
-				722A35E41D66B23100D7F28C /* Shuttle.h */,
-				722A35E61D66B23100D7F28C /* Info.plist */,
 			);
 			path = Shuttle;
 			sourceTree = "<group>";
@@ -139,10 +137,12 @@
 		722A35FB1D66B25A00D7F28C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				722A35E41D66B23100D7F28C /* Shuttle.h */,
+				722A36061D66B25A00D7F28C /* Shuttle.swift */,
 				722A35FD1D66B25A00D7F28C /* Controller */,
 				722A35FF1D66B25A00D7F28C /* Model */,
 				722A36001D66B25A00D7F28C /* Route */,
-				722A36061D66B25A00D7F28C /* Shuttle.swift */,
+				722A35E61D66B23100D7F28C /* Info.plist */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
