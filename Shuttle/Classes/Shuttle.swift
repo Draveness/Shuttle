@@ -13,14 +13,13 @@ public class Shuttle {
     
     static var routes: RouteMap = RouteMap()
     
-    public static func route(route: String, block: ((Payload, UINavigationController?) -> ())) {
+    public static func route(route: String, block: (Payload -> UIViewController)) {
         routes[route] = block
     }
 
     public static func route(route: String, viewController: UIViewController.Type) {
-        self.route(route) { parameter, navigation in
-            let viewController = viewController.init()
-            navigation?.pushViewController(viewController, animated: true)
+        self.route(route) { _ in
+            viewController.init()
         }
     }
 
@@ -31,7 +30,9 @@ public class Shuttle {
                 var payload = Payload()
                 payload.parameters = regex.matchResult(path)
                 payload.parameters["URL"] = path
-                return block(payload, UIViewController.topMostNavigationController())
+                let viewController = block(payload)
+                let navigation = UIViewController.topMostNavigationController()
+                navigation?.pushViewController(viewController, animated: true)
             }
         }
         return

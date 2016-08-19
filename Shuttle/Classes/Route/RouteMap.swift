@@ -9,8 +9,8 @@
 import Foundation
 
 struct RouteMap {
-    var routes: [String: (Payload, UINavigationController?) -> ()] = [:]
-    subscript(route: String) -> ((Payload, UINavigationController?) -> ())? {
+    var routes: [String: (Payload -> UIViewController)] = [:]
+    subscript(route: String) -> (Payload -> UIViewController)? {
         get {
             return routes[route]
         }

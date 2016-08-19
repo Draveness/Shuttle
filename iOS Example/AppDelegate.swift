@@ -22,13 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
 
-        Shuttle.route("http://localhost:3000/people/:id") { payload, navigation in
-            let transferController = TransferController(load: { callback in
-                Webservice.load(Person.retrieve(payload.id), completion: callback)
-            }, build: SuccViewController.init)
-            navigation?.pushViewController(transferController, animated: true)
-        }
-
+        Route.setup()
+        
         return true
     }
 
