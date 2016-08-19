@@ -20,7 +20,7 @@ class Regex: NSRegularExpression {
         self.originalPattern = pattern
         var cleanedPattern: String = pattern
         for nameGroup in self.groupNames {
-            cleanedPattern = cleanedPattern.stringByReplacingOccurrencesOfString(nameGroup, withString: "[a-zA-Z0-9-_][^/]+")
+            cleanedPattern = cleanedPattern.stringByReplacingOccurrencesOfString(nameGroup, withString: "[a-zA-Z0-9][^/]*")
         }
         try! super.init(pattern: cleanedPattern, options: [])
     }

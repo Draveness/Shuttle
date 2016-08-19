@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     func touch() {
-        Shuttle.launch("shuttle://succ/131313")
+        Shuttle.launch("http://localhost:3000/people/2")
     }
 }
 

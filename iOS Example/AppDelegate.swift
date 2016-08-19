@@ -22,13 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
 
-        let url = NSURL(string: "shuttle://succ/131313")
-        print(url?.scheme)
-        print(url?.baseURL)
-
-        Shuttle.route("shuttle://succ/:id") { payload, navigation in
-            let vc = SuccViewController()
-            navigation?.pushViewController(vc, animated: true)
+        Shuttle.route("http://localhost:3000/people/:id") { payload, navigation in
+            let transferController = TransferController(load: { callback in
+                Webservice.load(Person.retrieve(payload.id), completion: callback)
+            }, build: SuccViewController.init)
+            navigation?.pushViewController(transferController, animated: true)
         }
 
         return true

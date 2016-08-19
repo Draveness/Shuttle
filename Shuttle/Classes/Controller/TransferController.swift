@@ -8,10 +8,10 @@
 
 import Foundation
 
-final class LoadingViewController: UIViewController {
+final public class TransferController: UIViewController {
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
     
-    init<A>(load: ((A?) -> ()) -> (), build: (A) -> UIViewController) {
+    public init<A>(load: ((A?) -> ()) -> (), build: (A) -> UIViewController) {
         super.init(nibName: nil, bundle: nil)
         spinner.startAnimating()
         load() { [weak self] result in
@@ -22,24 +22,24 @@ final class LoadingViewController: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .whiteColor()
         spinner.hidesWhenStopped = true
-        spinner.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(spinner)
         spinner.center = view.center
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func add(content content: UIViewController) {
-        addChildViewController(content)
-        view.addSubview(content.view)
-        content.view.translatesAutoresizingMaskIntoConstraints = false
-        content.view.frame = view.frame
-        content.didMoveToParentViewController(self)
+        dispatch_async(dispatch_get_main_queue()) { 
+            self.addChildViewController(content)
+            self.view.addSubview(content.view)
+            content.view.frame = self.view.frame
+            content.didMoveToParentViewController(self)
+        }
     }
 }

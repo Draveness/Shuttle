@@ -30,6 +30,7 @@ public class Shuttle {
             if regex.isMatch(path) {
                 var payload = Payload()
                 payload.parameters = regex.matchResult(path)
+                payload.parameters["URL"] = path
                 return block(payload, UIViewController.topMostNavigationController())
             }
         }

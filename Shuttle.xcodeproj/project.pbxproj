@@ -26,6 +26,7 @@
 		725E62351D66B6CE00C66CDF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E62341D66B6CE00C66CDF /* Resource.swift */; };
 		725E62371D66B6E500C66CDF /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E62361D66B6E500C66CDF /* Webservice.swift */; };
 		725E62391D66B83100C66CDF /* TransferController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E62381D66B83100C66CDF /* TransferController.swift */; };
+		725E623C1D66D6D000C66CDF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725E623B1D66D6D000C66CDF /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		725E62341D66B6CE00C66CDF /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		725E62361D66B6E500C66CDF /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		725E62381D66B83100C66CDF /* TransferController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferController.swift; sourceTree = "<group>"; };
+		725E623B1D66D6D000C66CDF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		722A36791D66B35000D7F28C /* iOS Example */ = {
 			isa = PBXGroup;
 			children = (
+				725E623A1D66D6C800C66CDF /* Model */,
 				722A368A1D66B36000D7F28C /* AppDelegate.swift */,
 				722A368B1D66B36000D7F28C /* ViewController.swift */,
 				722A368C1D66B36000D7F28C /* SuccViewController.swift */,
@@ -197,6 +200,14 @@
 				722A36861D66B35000D7F28C /* Info.plist */,
 			);
 			path = "iOS Example";
+			sourceTree = "<group>";
+		};
+		725E623A1D66D6C800C66CDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				725E623B1D66D6D000C66CDF /* Person.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 			files = (
 				722A368F1D66B36000D7F28C /* SuccViewController.swift in Sources */,
 				722A368E1D66B36000D7F28C /* ViewController.swift in Sources */,
+				725E623C1D66D6D000C66CDF /* Person.swift in Sources */,
 				722A368D1D66B36000D7F28C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

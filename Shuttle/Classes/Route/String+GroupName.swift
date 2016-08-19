@@ -10,12 +10,14 @@ import Foundation
 
 extension String {
     func groupNames() -> [String] {
+        guard let relativePath = NSURL(string: self)?.relativePath,
+              let componentRegex = try? NSRegularExpression(pattern: ShuttleRegexURLComponentPattern, options: []) else { return [] }
+        
         var groupNames: [String] = []
 
-        let componentRegex = try! NSRegularExpression(pattern: ShuttleRegexURLComponentPattern, options: [])
-        let matches = componentRegex.matchesInString(self, options: [], range: NSRange(location: 0, length: self.characters.count))
+        let matches = componentRegex.matchesInString(relativePath, options: [], range: NSRange(location: 0, length: relativePath.characters.count))
         matches.forEach({ (result: NSTextCheckingResult) in
-            let groupName = (self as NSString).substringWithRange(result.range)
+            let groupName = (relativePath as NSString).substringWithRange(result.range)
             groupNames.append(groupName)
         })
 
